@@ -1,0 +1,817 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 9vh;
+    background-color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 7px;
+
+    
+}
+.nav-links{
+    color: black;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin-left: auto;
+}
+.nav-links li{
+    list-style-type: none;
+}
+.nav-links a{
+    color:  black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.logo{
+    color: rgb(219, 48, 48);
+    font-size: 30px;
+   
+    padding: 5px;
+    border-radius: 5px;
+}
+button{
+    display: none;
+}
+.burger{
+    display: none;
+}
+.burger div{
+    background-color: rgb(219, 48, 48);
+    width: 25px;
+    height: 3px;
+    border-radius: 3px;
+    margin: 3px;
+}
+button{
+    background-color: none;
+    border: none;
+}
+.overlay{
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 9%;
+    background-color: transparent;
+    overflow-x: hidden;
+    transition: all 0.5s ease;
+}
+.overlay_content{
+    display: flex;
+    justify-content: space-around;
+    height: 51%;
+    flex-direction: column;
+    background-color: rgb(219, 48, 48);
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.overlay a{
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color:  black;
+    letter-spacing: 3px;
+    transition: all 0.7s ease;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+    padding: 15px;
+    transition: 0.3s ease;
+}
+ul li a:hover{
+    background-color:  rgb(219, 48, 48);
+    color: black;
+}
+.black-container{
+    width: 100%;
+    height: 500px;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(separate.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 50px;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+.animated{
+    color: white;
+    
+}
+.small{
+    font-size: 13px;
+    color: white;
+}
+.container1{
+    width: 100%;
+    margin-top: 30px;
+}
+.sub-container1{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+    padding: 5px;
+    margin-top: 20px;
+    align-items: center;
+}
+.code{
+    width: 900px;
+    height: 300px;
+    margin: 7px;
+    border-radius: 5px;
+}
+.design{
+    width: 900px;
+    height: 300px;
+    
+    margin: 7px;
+    border-radius: 5px;
+}
+.mentor{
+    width: 900px;
+    height: 300px;
+    
+    margin: 7px;
+    border-radius: 5px;
+}
+.fas{
+    font-size: 70px;
+    padding-top: 20px;
+    color: rgb(219, 48, 48);
+}
+.code-heading{
+    margin-top: 20px;
+}
+.design-heading{
+    margin-top: 20px;
+}
+.mentor-heading{
+    margin-top: 20px;
+}
+.p2{
+    padding-top: 30px;
+    
+}
+.container2{
+    padding-top: 30px;
+    background-color: rgb(219, 48, 48);
+    height: 450px;
+}
+.image{
+    width: 350px;
+    height: 380px;
+    background-image: url(me.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 30px;
+}
+.header{
+    margin-left: 450px;
+    margin-top: -270px;
+    font-size: 40px;
+}
+.write{
+    width: 800px;
+    margin-left:450px ;
+    margin-top: -250px;
+}
+.another{
+    margin-top: 90px;
+    width: 800px;
+}
+.r{
+    font-size: 30px;
+}
+.me-contact{
+    
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    height: 300px;
+   
+    justify-content: space-around;
+    align-items: center;
+  
+}
+.me-contatct-head{
+    font-size: 32px;
+    margin-top: 70px;
+}
+.fab{
+    font-size: 70px;
+    padding-top: 20px;
+    color: rgb(219, 48, 48);
+}
+.whatsapp{
+    width: 250px;
+    height: 250px;
+    
+}
+v {
+    text-decoration: none;
+    color: black;
+}
+.phone{
+    width: 250px;
+    height: 250px;
+   
+    
+}
+.email{
+    width: 250px;
+    height: 250px;
+   
+    
+}
+footer{
+    
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    color: grey;
+}
+.footer-head{
+    font-size: 40px;
+}
+.blossom{
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1024px){
+.black-container{
+    width: 100%;
+    height: 500px;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(separate.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 50px;
+    padding-top: 30px;
+}
+.animated{
+    color: white;
+    
+}
+.small{
+    font-size: 13px;
+    color: white;
+}
+.container1{
+    width: 100%;
+    margin-top: 30px;
+}
+.sub-container1{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    margin-top: 30px;
+    align-items: center;
+}
+.code{
+    width: 900px;
+    height: 300px;
+    margin: 50px;
+    border-radius: 5px;
+}
+.design{
+    width: 900px;
+    height: 300px;
+    
+    margin: 50px;
+    border-radius: 5px;
+}
+.mentor{
+    width: 900px;
+    height: 300px;
+    
+    margin: 50px;
+    border-radius: 5px;
+}
+.fas{
+    font-size: 70px;
+    padding-top: 20px;
+    color: rgb(219, 48, 48);
+}
+.code-heading{
+    margin-top: 20px;
+}
+.design-heading{
+    margin-top: 20px;
+}
+.mentor-heading{
+    margin-top: 20px;
+}
+.p2{
+    padding-top: 30px;
+    
+}
+.container2{
+    padding-top: 30px;
+    background-color: rgb(219, 48, 48);
+    height: 450px;
+}
+.image{
+    width: 350px;
+    height: 380px;
+    background-image: url(me.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 30px;
+}
+.header{
+    margin-left: 450px;
+    margin-top: -340px;
+    font-size: 40px;
+}
+.write{
+    width: 400px;
+    margin-left:450px ;
+    margin-top: -290px;
+}
+.another{
+    margin-top: 90px;
+    width: 800px;
+}
+.r{
+    font-size: 30px;
+}
+
+footer{
+    
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    color: grey;
+}
+.footer-head{
+    font-size: 35px;
+}
+.address{
+    margin-top: -20px;
+}
+}
+@media screen and (max-width: 768px){
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-links{
+        display: none;
+    }
+    .first-write-up{
+        position: absolute;
+        margin-top: 20px;
+        color: white;
+        font-size: 40px;
+        top: 25%;
+        left: 3%;
+    }
+    button{
+        background-color: transparent;
+        border: none;
+        padding: none;
+        display: flex;
+    }
+    .black-container{
+        width: 100%;
+        height: 500px;
+        color: white;
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(separate.jpg);
+        background-position: center;
+        background-size: cover;
+        font-size: 50px;
+        padding-top: 30px;
+    }
+    .animated{
+        color: white;
+        
+    }
+    .small{
+        font-size: 13px;
+        color: white;
+    }
+    .container1{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .sub-container1{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        background-color: white;
+        padding: 10px;
+        margin-top: 30px;
+        align-items: center;
+    }
+    .code{
+        width: 700px;
+        height: 300px;
+        margin: 50px;
+        border-radius: 5px;
+        
+    }
+    .design{
+        width: 800px;
+        height: 300px;
+        
+        margin: 50px;
+        border-radius: 5px;
+    }
+    .mentor{
+        width: 700px;
+        height: 300px;
+        
+        margin: 50px;
+        border-radius: 5px;
+    }
+    .fas{
+        font-size: 70px;
+        padding-top: 20px;
+        color: rgb(219, 48, 48);
+    }
+    .code-heading{
+        margin-top: 20px;
+    }
+    .design-heading{
+        margin-top: 20px;
+    }
+    .mentor-heading{
+        margin-top: 20px;
+    }
+    .p2{
+        padding-top: 30px;
+        
+    }
+    .container2{
+        padding-top: 30px;
+        background-color: rgb(219, 48, 48);
+        height: 400px;
+    }
+    .image{
+        width: 300px;
+        height: 300px;
+        background-image: url(me.jpg);
+        background-position: center;
+        background-size: cover;
+        margin-left: 30px;
+    }
+    .header{
+        margin-left: 450px;
+        margin-top: -300px;
+        font-size: 40px;
+    }
+    .write{
+        width: 400px;
+        margin-left: 360px;
+        margin-top: -250px;
+    }
+    .another{
+        margin-top: 90px;
+        width: 700px;
+    }
+    .r{
+        font-size: 30px;
+    }
+    .contact-moi{
+        display: flex;
+        margin-top: 50px;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        background-color: rgb(199, 199, 199);
+    }
+    .moi-header{
+        font-size: 40px;
+        margin-left: 300px;
+    }
+    footer{
+        
+        height: 300px;
+        width: 100%;
+        background-color: black;
+        color: grey;
+    }
+    .footer-head{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-links{
+        display: none;
+    }
+    .first-write-up{
+        position: absolute;
+        margin-top: 20px;
+        color: white;
+        font-size: 40px;
+        top: 25%;
+        left: 3%;
+    }
+    button{
+        background-color: transparent;
+        border: none;
+        padding: none;
+        display: flex;
+    }
+    .black-container{
+        width: 100%;
+        height: 500px;
+        color: white;
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(separate.jpg);
+        background-position: center;
+        background-size: cover;
+        font-size: 50px;
+        padding-top: 30px;
+    }
+    .animated{
+        color: white;
+        
+    }
+    .small{
+        font-size: 13px;
+        color: white;
+    }
+    .container1{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .sub-container1{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        background-color: white;
+        padding: 10px;
+        margin-top: 30px;
+        align-items: center;
+    }
+    .code{
+        width: 400px;
+        height: 300px;
+        margin: 50px;
+        border-radius: 5px;
+        
+    }
+    .design{
+        width: 400px;
+        height: 300px;
+        
+        margin: 50px;
+        border-radius: 5px;
+    }
+    .mentor{
+        width: 400px;
+        height: 300px;
+        
+        margin: 50px;
+        border-radius: 5px;
+    }
+    .fas{
+        font-size: 70px;
+        padding-top: 20px;
+        color: rgb(219, 48, 48);
+    }
+    .code-heading{
+        margin-top: 20px;
+    }
+    .design-heading{
+        margin-top: 20px;
+    }
+    .mentor-heading{
+        margin-top: 20px;
+    }
+    .p2{
+        padding-top: 30px;
+        
+    }
+    .container2{
+        padding-top: 30px;
+        background-color: rgb(219, 48, 48);
+        height: 600px;
+    }
+    .image{
+        width: 200px;
+        height: 200px;
+        background-image: url(me.jpg);
+        background-position: center;
+        background-size: cover;
+        margin-left: 30px;
+    }
+    .header{
+        margin-left: 50px;
+        margin-top: -320px;
+        font-size: 30px;
+    }
+    .write{
+        width: 390px;
+        margin-left: 20px;
+        margin-top: 110px;
+    }
+    .another{
+        margin-top: 90px;
+        width: 100%;
+    }
+    .r{
+        font-size: 30px;
+    }
+    .me-contact{
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        margin-top: 180px;
+        height: 300px;
+        width: 100%;
+        background-color: black;
+        color: grey;
+    }
+    .footer-head{
+        font-size: 20px;
+    }
+}
+    
+@media screen and (max-width: 375px){
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-links{
+        display: none;
+    }
+    .first-write-up{
+        position: absolute;
+        margin-top: 20px;
+        color: white;
+        font-size: 40px;
+        top: 25%;
+        left: 3%;
+    }
+    button{
+        background-color: transparent;
+        border: none;
+        padding: none;
+        display: flex;
+    }
+    .black-container{
+        width: 100%;
+        height: 500px;
+        color: white;
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(separate.jpg);
+        background-position: center;
+        background-size: cover;
+        font-size: 50px;
+        padding-top: 30px;
+    }
+    .animated{
+        color: white;
+        
+    }
+    .small{
+        font-size: 13px;
+        color: white;
+    }
+    .container1{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .sub-container1{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        background-color: white;
+        padding: 10px;
+        margin-top: 30px;
+        align-items: center;
+    }
+    .code{
+        width: 370px;
+        height: 300px;
+        margin: 50px;
+        border-radius: 5px;
+        
+    }
+    .design{
+        width: 370px;
+        height: 300px;
+        
+        margin: 50px;
+        border-radius: 5px;
+    }
+    .mentor{
+        width: 360px;
+        height: 300px;
+        
+        margin: 50px;
+        border-radius: 5px;
+    }
+    .fas{
+        font-size: 70px;
+        padding-top: 20px;
+        color: rgb(219, 48, 48);
+    }
+    .code-heading{
+        margin-top: 20px;
+    }
+    .design-heading{
+        margin-top: 20px;
+    }
+    .mentor-heading{
+        margin-top: 20px;
+    }
+    .p2{
+        padding-top: 30px;
+        
+    }
+    .container2{
+        padding-top: 30px;
+        background-color: rgb(219, 48, 48);
+        height: 610px;
+    }
+    .image{
+        width: 200px;
+        height: 200px;
+        background-image: url(me.jpg);
+        background-position: center;
+        background-size: cover;
+        margin-left: 30px;
+    }
+    .header{
+        margin-left: 40px;
+        margin-top: -340px;
+        font-size: 30px;
+    }
+    .write{
+        width: 350px;
+        margin-left: 20px;
+        margin-top: 105px;
+    }
+    .another{
+        margin-top: 90px;
+        width: 100%;
+    }
+    .r{
+        font-size: 30px;
+    }
+    .me-contact{
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        margin-top: 180px;
+        height: 300px;
+        width: 100%;
+        background-color: black;
+        color: grey;
+    }
+    .footer-head{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 320px){
+.design{
+    width: 300px;
+}
+.code{
+    width: 300px;
+}
+.mentor{
+    width: 300px;
+}
+    .write{
+    width: 295px;
+}
+.container2{
+    height: 650px;
+}
+}
